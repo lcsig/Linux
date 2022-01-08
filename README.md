@@ -52,7 +52,7 @@ g++                                         # g++ input.cpp; ./a.out
 - [ ] Grub
 - [ ] init systemd service-file
 - [ ] ircd and conf
-- [ ] 
+- [ ] Research History File
 
 # Temporary Listing ...
 
@@ -186,4 +186,66 @@ g++                                         # g++ input.cpp; ./a.out
 - caller
 - mapfile
 - help
-- 
+- arpspoof
+- file
+- svn
+- reboot
+- shutdown
+- xview and diff from eog
+- convert and diff from mogrify
+- update-grub
+- md5sum
+- shaXXsum
+- sum
+- systemctl
+- startx and init and new desktop in diff session
+- sudoedit
+- xdg-open
+- top
+- htop
+- chmod
+- chown
+- head
+- tail
+- stat
+- ls and ...
+- paste
+- cut ... -d
+- copy
+- env
+- which
+- ! and shorts
+- date
+- more
+- cp
+- mv
+- mkdir
+- rm
+- ps
+- free
+- ssh
+- ifconfig
+- route
+- netstat
+- ip
+- ssh keyfinger
+- groups
+- id
+- chgrp
+- w
+- whoami
+- who
+- wc
+- touch
+- groupadd
+- groupmod
+- tac
+- cat
+- userdel
+- grep with args
+- deluser
+- gzip
+- gunzip
+- sort
+- xargs
+- tr
