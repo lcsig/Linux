@@ -11,6 +11,12 @@ eog                                         # eog input.png
 ```
 xournal                                     # echo "GTK+ Application for note taking"; echo "PDF Support"
 simplescreenrecorder                        # echo "A feature-rich screen recorder that supports X11 and OpenGL"
+axel                                        # axel -n 16 "https://oeis.org/stripped.gz"
+httrack                                     # httrack -c8 "website_link"
+wget                                        # wget --start-pos=OFFSET "https://oeis.org/stripped.gz"
+curl                                        # curl -H "Header" "https://oeis.org/stripped.gz" 
+cowsay/cowthink                             # fortune | cowsay
+fortune                                     # echo "Print a random, hopefully interesting, adage"
 ```
 
 
