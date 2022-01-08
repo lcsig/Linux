@@ -34,5 +34,156 @@ ocrad                                       # ocrad input.ppm
 binwalk                                     # echo "Tool for searching binary images for embedded files and executable code"
 dmd                                         # dmd input.d && ./input
 gparted                                     # echo "GNOME Partition Editor for manipulating disk partitions"
+gcc                                         # gcc input.c; ./a.out
+g++                                         # g++ input.cpp; ./a.out
 ```
 
+
+# TODO
+
+- [ ] Terminal
+- [ ] Builtin
+- [ ] Apt Packages 
+- [ ] /bin/
+- [ ] .bashrc file 
+- [ ] Welcome Message
+- [ ] Apt Commands (apt, apt listing, apt-hold, add-apt, remove-apt, apt reset, apt-apt settings, apt-key, apt-file and LINK, )
+- [ ] Kali 
+- [ ] Grub
+- [ ] init systemd service-file
+- [ ] ircd and conf
+- [ ] 
+
+# Temporary Listing ...
+
+- arpspoof
+- aircrack-ng
+- adduser
+- useradd
+- bc
+- diffpdf
+- diff
+- dpkg
+- dex2jar
+- fdisk
+- lsof
+- loggedfs
+- ftp
+- gdb
+- git
+- grep
+- gradle
+- gpg
+- grub
+- gzip and ... 
+- hexedit
+- hostname
+- htop
+- hwinfo
+- traceroute
+- ping
+- nmap
+- nslookup
+- dig
+- info
+- man
+- xinput
+- init
+- iptables
+- xchat
+- ircd-irc2
+- john!
+- modprobe and ...
+- less
+- lightdm
+- linux-image linux-headers linux-modules
+- lshw
+- ltrace
+- strace
+- make
+- maven
+- mount
+- nano
+- net-tools and replacement
+- ntfs-3g
+- octave
+- openssl
+- passwd
+- pdftk
+- rar
+- unrar
+- python
+- pip
+- remmina
+- xfreerdp
+- rfkill
+- dmesg
+- sed
+- awk
+- simple-scan
+- sqlitebrowser
+- sshfs
+- sudo and params
+- tar
+- tcpdump
+- telnet
+- time
+- sleep
+- ufw
+- unzip
+- wdiff
+- whois
+- wireshark
+- xxd
+- 0
+- 0
+- type
+- whereis
+- whatis
+- hash
+- fg
+- bg
+- jobs
+- history
+- kill
+- builtin
+- umask
+- unalias
+- unset
+- typeset
+- ulimit
+- trap
+- script
+- times
+- source
+- suspend
+- printf
+- read
+- pwd
+- readonly
+- return
+- set
+- shift
+- shopt
+- logout
+- local
+- let
+- eval
+- echo
+- enable
+- disown
+- declare
+- complete
+- compgen and ...
+- bind
+- command
+- exec
+- exit
+- clear
+- export
+- getopts
+- test
+- caller
+- mapfile
+- help
+- 
