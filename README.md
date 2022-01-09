@@ -135,6 +135,7 @@ g++                                         # g++ input.cpp; ./a.out
 - whois
 - wireshark
 - xxd
+- xmodmap
 - 0
 - 0
 - type
