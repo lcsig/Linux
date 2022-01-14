@@ -7,6 +7,10 @@ popd                                        # popd
 eog                                         # eog input.png
 ```
 
+```
+lightdm                                     # lightdm --test-mode --debug
+```
+
 
 ```
 xournal                                     # echo "GTK+ Application for note taking"; echo "PDF Support"
