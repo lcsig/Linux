@@ -21,6 +21,7 @@ wget                                        # wget --start-pos=OFFSET "https://o
 curl                                        # curl -H "Header" "https://oeis.org/stripped.gz" 
 cowsay/cowthink                             # fortune | cowsay
 fortune                                     # echo "Print a random, hopefully interesting, adage"
+ffmpeg                                      # ffmpeg -i input_video.mp4  -ss 00:26:48 -to 00:29:46 -vcodec libx264 -acodec aac -strict experimental -f mp4 out.mp4
 ```
 
 
