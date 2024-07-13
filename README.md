@@ -1,7 +1,7 @@
 # Linux
 
 ```
-pushd                                       # pushd <path>
+pushd                                       # pushd _path_
 dirs                                        # dirs
 popd                                        # popd
 eog                                         # eog input.png
@@ -44,7 +44,7 @@ g++                                         # g++ input.cpp; ./a.out
 ```
 
 # Linux Info & Perf
-- time <command>     # To time CPU/USER/Real time, CPU time can be bigger than real time (multi threading)
+- time _command_        # To time CPU/USER/Real time, CPU time can be bigger than real time (multi threading)
 - cat /proc/cpuinfo
 - cat /proc/meminfo
 - cat /proc/ID/limits
@@ -54,8 +54,8 @@ g++                                         # g++ input.cpp; ./a.out
 - cat /proc/ID/statm
 - cat /proc/ID/status 
 - cat /proc/ID/maps  # Max in cat /proc/sys/vm/max_map_count
-- sudo perf stat -d -d <command>
-- sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses <command>
+- sudo perf stat -d -d _command_
+- sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses _command_
 - perf -h
 - cat /proc/1/status | grep -i Vm
   - VmPeak: Peak virtual memory size.
@@ -82,7 +82,7 @@ g++                                         # g++ input.cpp; ./a.out
 - vmstat -s     # Memory Info with Description Including Pages
 - top           # To see the cache/buffer that is emptied by drop_caches (Colored in htop)
 - sar -d 5 2    # Disk stat after 5 second, two tries
-- renice -n -10 -p <PID>
+- renice -n -10 -p _PID_
 - mount -o remount,noatime /var/lib/mysql   # Remount SQL for Better Perf 
 - SWAP:
   - dd if=/dev/zero of=/media/user/data/swap count=1K bs=200M # 200GB SWAP
