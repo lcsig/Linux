@@ -83,6 +83,7 @@ g++                                         # g++ input.cpp; ./a.out
 - top           # To see the cache/buffer that is emptied by drop_caches (Colored in htop)
 - sar -d 5 2    # Disk stat after 5 second, two tries
 - renice -n -10 -p <PID>
+- mount -o remount,noatime /var/lib/mysql   # Remount SQL for Better Perf 
 - SWAP:
   - dd if=/dev/zero of=/media/user/data/swap count=1K bs=200M # 200GB SWAP
   - sudo mkswap /media/user/data/swap 
