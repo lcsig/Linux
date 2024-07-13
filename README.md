@@ -233,7 +233,7 @@ g++                                         # g++ input.cpp; ./a.out
 - ifconfig
 - route
 - netstat
-- ip
+- ip # ip addr
 - ssh keyfinger
 - groups
 - id
@@ -251,7 +251,11 @@ g++                                         # g++ input.cpp; ./a.out
 - grep with args
 - deluser
 - gzip
+- cat /proc/cpuinfo
+- time
+- echo /dev/tcp/IP/PORT 
 - gunzip
 - sort
 - xargs
 - tr
+- echo > /dev/tcp/192.168.1.1/80 && echo "Open"
