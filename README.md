@@ -43,7 +43,59 @@ gcc                                         # gcc input.c; ./a.out
 g++                                         # g++ input.cpp; ./a.out
 ```
 
+# Linux Info & Perf
+- time <command>     # To time CPU/USER/Real time, CPU time can be bigger than real time (multi threading)
+- cat /proc/cpuinfo
+- cat /proc/meminfo
+- cat /proc/ID/limits
+- cat /proc/ID/numa_maps
+- cat /proc/ID/sched
+- cat /proc/ID/stat
+- cat /proc/ID/statm
+- cat /proc/ID/status 
+- cat /proc/ID/maps  # Max in cat /proc/sys/vm/max_map_count
+- sudo perf stat -d -d <command>
+- sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses <command>
+- perf -h
+- cat /proc/1/status | grep -i Vm
+  - VmPeak: Peak virtual memory size.
+  - VmSize: Current virtual memory size.
+  - VmLck: Locked memory size (cannot be swapped out).
+  - VmPin: Pinned memory size (pages that can't be moved).
+  - VmHWM: Peak resident set size ("high water mark").
+  - VmRSS: Resident set size (non-swapped physical memory).
+  - VmData: Size of the data segment.
+  - VmStk: Size of the stack.
+  - VmExe: Size of the text segment.
+  - VmLib: Shared library code size.
+  - VmPTE: Page table entries size.
+  - VmSwap: Swapped-out virtual memory size.
+- echo 1/2/3 | sudo tee /proc/sys/vm/drop_caches
+  - 1 Disk-Releated Cache Space
+  - 2 dentries & i nodes
+  - 3 for all
+  - https://www.kernel.org/doc/Documentation/sysctl/vm.txt
+- /proc/sys/fs/binfmt_misc    # Configrations for exetensions execution
+- cat /proc/sys/fs/file-nr    # Number of Opened File Sys
+- cat /proc/sys/fs/inode-nr   # Numer of Inodes and Free nodes (More in inode-state)
+- iostat -d     # io state
+- vmstat -s     # Memory Info with Description Including Pages
+- top           # To see the cache/buffer that is emptied by drop_caches (Colored in htop)
+- sar -d 5 2    # Disk stat after 5 second, two tries
+- renice -n -10 -p <PID>
+- SWAP:
+  - dd if=/dev/zero of=/media/user/data/swap count=1K bs=200M # 200GB SWAP
+  - sudo mkswap /media/user/data/swap 
+  - sudo chown root:root /media/user/data/swap 
+  - sudo chmod 600 /media/user/data/swap 
+  - sudo swapon /media/user/data/swap
 
+
+# Others 
+- echo > /dev/tcp/192.168.1.1/80 && echo "Open"
+- cat </dev/tty >k.txt
+
+  
 # TODO
 
 - [ ] Terminal
@@ -251,28 +303,7 @@ g++                                         # g++ input.cpp; ./a.out
 - grep with args
 - deluser
 - gzip
-- cat /proc/cpuinfo   /proc/meminfo  /proc/ID/limits /proc/ID/numa_maps /proc/ID/sched /proc/ID/stat /proc/ID/statm /proc/ID/status 
-- time
-- echo /dev/tcp/IP/PORT 
 - gunzip
 - sort
 - xargs
 - tr
-- echo > /dev/tcp/192.168.1.1/80 && echo "Open"
-- sudo perf stat -d -d <command>
-- sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses ./a.out
-- perf -h
-- cat /proc/1/status | grep -i Vm # For Leaks
-  - VmPeak: Peak virtual memory size.
-  - VmSize: Current virtual memory size.
-  - VmLck: Locked memory size (cannot be swapped out).
-  - VmPin: Pinned memory size (pages that can't be moved).
-  - VmHWM: Peak resident set size ("high water mark").
-  - VmRSS: Resident set size (non-swapped physical memory).
-  - VmData: Size of the data segment.
-  - VmStk: Size of the stack.
-  - VmExe: Size of the text segment.
-  - VmLib: Shared library code size.
-  - VmPTE: Page table entries size.
-  - VmSwap: Swapped-out virtual memory size.
-- echo 1/2/3 | sudo tee /proc/sys/vm/drop_caches # 1 Disk-Releated Cache Space, 2 dentries & i nodes, 3 for all - https://www.kernel.org/doc/Documentation/sysctl/vm.txt
