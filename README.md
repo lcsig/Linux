@@ -259,3 +259,20 @@ g++                                         # g++ input.cpp; ./a.out
 - xargs
 - tr
 - echo > /dev/tcp/192.168.1.1/80 && echo "Open"
+- sudo perf stat -d -d <command>
+- sudo perf stat -e L1-dcache-loads,L1-dcache-load-misses ./a.out
+- perf -h
+- cat /proc/1/status | grep -i Vm # For Leaks
+  - VmPeak: Peak virtual memory size.
+  - VmSize: Current virtual memory size.
+  - VmLck: Locked memory size (cannot be swapped out).
+  - VmPin: Pinned memory size (pages that can't be moved).
+  - VmHWM: Peak resident set size ("high water mark").
+  - VmRSS: Resident set size (non-swapped physical memory).
+  - VmData: Size of the data segment.
+  - VmStk: Size of the stack.
+  - VmExe: Size of the text segment.
+  - VmLib: Shared library code size.
+  - VmPTE: Page table entries size.
+  - VmSwap: Swapped-out virtual memory size.
+- echo 1/2/3 | sudo tee /proc/sys/vm/drop_caches # 1 Disk-Releated Cache Space, 2 dentries & i nodes, 3 for all - https://www.kernel.org/doc/Documentation/sysctl/vm.txt
