@@ -251,7 +251,7 @@ g++                                         # g++ input.cpp; ./a.out
 - grep with args
 - deluser
 - gzip
-- cat /proc/cpuinfo
+- cat /proc/cpuinfo   /proc/meminfo  /proc/ID/limits /proc/ID/numa_maps /proc/ID/sched /proc/ID/stat /proc/ID/statm /proc/ID/status 
 - time
 - echo /dev/tcp/IP/PORT 
 - gunzip
